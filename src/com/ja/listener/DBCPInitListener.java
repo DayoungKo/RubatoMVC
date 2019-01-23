@@ -25,8 +25,8 @@ public class DBCPInitListener implements ServletContextListener
     	{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:MYORACLE";
-			String username = "SCOTT";
-			String pw = "TIGER";
+			String username = "userName";
+			String pw = "password";
 
 			ConnectionFactory connFactory = new DriverManagerConnectionFactory(jdbcUrl, username, pw);
 
