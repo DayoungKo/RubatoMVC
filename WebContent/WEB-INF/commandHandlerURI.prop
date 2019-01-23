@@ -1,0 +1,14 @@
+/index.do=com.ja.controller.command.IndexHandler
+/boardlist.do=com.ja.controller.command.BoardListHandler
+/login.do=com.ja.controller.command.LoginHandler
+/logout.do=com.ja.controller.command.LogoutHandler
+/joinmemberform.do=com.ja.controller.command.JoinMemberFormHandler
+/joinmember.do=com.ja.controller.command.JoinMemberHandler
+/boardwriteform.do=com.ja.controller.command.BoardWriteFormHandler
+/boardwrite.do=com.ja.controller.command.BoardWriteHandler
+/readbaord.do=com.ja.controller.command.ReadBoardHandler
+/deleteboardcontent.do=com.ja.controller.command.DeleteBoardContentHandler
+/updateboardcontentform.do=com.ja.controller.command.UpdateBoardContentFormHandler
+/updateboardcontent.do=com.ja.controller.command.UpdateBoardContentHandler
+/writereplyonbc.do=com.ja.controller.command.WriteReplyOnBCHandler
+/deletebcreply.do=com.ja.controller.command.DeleteBCReplyHandler

@@ -1,0 +1,16 @@
+
+
+section #buttons .col1 a{
+    text-decoration:none;
+    color: black;
+}
+section#main #total {
+    position:absolute;
+    top:.7em;
+    left:7em;
+}
+#paging
+{
+	position:absolute;
+	margin: .6em;
+}

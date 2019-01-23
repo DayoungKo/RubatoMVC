@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>RubatoMVC</display-name>
+  <welcome-file-list>
+    <welcome-file>index.do</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ControllerUsingURI</servlet-name>
+    <servlet-class>com.ja.controller.ControllerUsingURI</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerUsingURI</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>com.ja.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encodingType</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>LoginSessionCheckFilter</filter-name>
+    <filter-class>com.ja.filter.LoginSessionCheckFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginSessionCheckFilter</filter-name>
+    <url-pattern>/boardwriteform.do</url-pattern>
+    <url-pattern>/updateboardcontentform.do</url-pattern>
+  </filter-mapping>
+  <listener>
+    <description>DBCP 가동용 리스너</description>
+    <listener-class>com.ja.listener.DBCPInitListener</listener-class>
+  </listener>
+</web-app>

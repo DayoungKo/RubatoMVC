@@ -1,0 +1,87 @@
+/* 우측 메인 콘텐트 */
+section#main {
+    width:758px;
+    float:right;
+    /* border:solid 1px #ff0000; */
+}
+section#main h2#board_title {
+    margin-top:20px;
+    padding:0 0 5px 0;
+}
+section#main #view_title_box {
+    margin:10px 0 0 0;
+    padding:10px;
+    border-top:solid 2px #aaaaaa;
+    background-color:#eeeeee;	
+} 
+section#main #view_title_box #info {
+    margin:0 0 0 270px;
+} 
+section#main #view_content {
+    padding:20px 10px 10px 10px;
+    line-height:150%;
+} 
+section #buttons {
+    text-align:right;
+    margin:20px 0 0 0;
+}
+section#main #comment_box {
+    position:relative;
+    background-color:#efefef;
+    border-top:solid 1px #cccccc;
+}
+section#main #comment_box #title_comment {
+    position:absolute;
+    top:15px;
+    left:15px;
+    float:left;
+}
+section#main #comment_box textarea {
+    width:85%;
+    height:78px;
+    top:15px;
+    left:145px;	
+}
+section#main #comment_box #ok_ripple {
+    top:15px;
+    left:670px;	
+}
+#comment_view_box
+{
+	margin-bottom: 2em;
+	float:right;
+	width: 80%;
+	min-height: 5em;
+}
+#comment_input_box
+{
+	margin: .5em auto;
+	width: 90%;
+	border-top: 1px solid grey;
+	text-align: right;
+	padding: 1em;
+}
+.reply_table{
+	width: 95%;
+	margin: .8em 0;
+	background: #D5D5D9;
+	border-radius: 1em;
+	padding: .5em;
+}
+.reply_writer{
+	font-size: 1.2em;
+}
+.reply_info{
+	text-align: right;
+	padding-rigth: 1em;
+	font-size: .7em;
+}
+.reply_content{
+	padding: .2em .5em;
+}
+.reply_delete{
+	text-decoration: none;
+	font-size: .5em;
+	color: #861728;
+	margin-left: .5em;
+}
