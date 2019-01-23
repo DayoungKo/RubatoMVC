@@ -45,7 +45,7 @@ public class DBCPInitListener implements ServletContextListener
 			
 			Class.forName("org.apache.commons.dbcp2.PoolingDriver");
 			PoolingDriver driver = (PoolingDriver) DriverManager.getDriver("jdbc:apache:commons:dbcp:");
-			driver.registerPool("boardMVC", connectionPool);
+			driver.registerPool("RubatoMVC", connectionPool);
 		} 
     	catch (Exception e) 
     	{
